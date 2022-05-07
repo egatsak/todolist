@@ -1,0 +1,19 @@
+.spisok {
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.element {
+  flex-direction: row;
+  width: 80px;
+}
+
+.border {
+  border: 1px solid #bdbdbd;
+}

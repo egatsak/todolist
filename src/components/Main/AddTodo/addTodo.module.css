@@ -1,0 +1,41 @@
+.addTodo {
+  display: flex;
+  margin-top: 18px;
+  height: 56px;
+}
+
+.inputAddTodo {
+  width: 100%;
+  padding-left: 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  cursor: pointer;
+}
+
+.inputAddTodo:hover {
+  outline: none;
+  transform: scale(1.1);
+  border: 1px solid #393535;
+}
+
+.buttonAddTodo {
+  margin-left: 25px;
+  width: 109px;
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.buttonAddTodo:hover {
+  cursor: pointer;
+  background: #679fe9;
+}
