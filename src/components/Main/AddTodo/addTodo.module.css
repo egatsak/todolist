@@ -2,6 +2,7 @@
   display: flex;
   margin-top: 18px;
   height: 56px;
+  margin-bottom: 45px;
 }
 
 .inputAddTodo {
@@ -20,7 +21,7 @@
 
 .inputAddTodo:hover {
   outline: none;
-  transform: scale(1.1);
+  transform: scale(1.05);
   border: 1px solid #393535;
 }
 

@@ -34,5 +34,5 @@ const AddTodo = ({ setTodos, todos }) => {
       <input className={styles.buttonAddTodo} type="submit" value="Add" />
     </form>
   );
-}
+};
 export default AddTodo;
