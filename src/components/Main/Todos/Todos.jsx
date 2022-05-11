@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./todos.module.css";
 import clsx from "clsx";
 
-export default function Todos({ todos }) {
+export default function Todos({ todos, setTodos }) {
+  let [isChecked, setChecked] = useState(false);
+  console.log(todos)
+  const handleClick = (id) => {
+    const newArray = todos.map((todo) => {
+      if (todo.id === id) {
+        todo.completed = !todo.completed
+      }
+      return todo
+    });
+    console.log(newArray, 'newArray')
+    setTodos(newArray)
+  }
+
   return (
     <div>
       {todos.map((todo) => (
@@ -12,15 +25,18 @@ export default function Todos({ todos }) {
             className={styles.checkbox}
             checked={todos.completed}
             onClick={() => {
-              todo.completed = !todo.completed;
+              handleClick(todo.id)
+              setChecked(!isChecked);
               console.log(todo);
             }}
           />{" "}
           <span
-            className={clsx(styles.textTodo, {
-              [styles.stroke]: todo.completed === true,
-            })}
-          >
+            className={
+              isChecked
+                ? `${styles.textTodo} ${styles.stroke}`
+                : styles.textTodo
+            }
+            >
             {" "}
             {todo.text} была создана {todo.date.toLocaleString()}
           </span>

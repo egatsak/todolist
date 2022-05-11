@@ -10,7 +10,7 @@ export default function Main() {
     <main className={styles.main}>
       <Tabs />
       <AddTodo setTodos={setTodos} todos={todos} />
-      <Todos todos={todos}/>
+      <Todos todos={todos} setTodos={setTodos}/>
     </main>
   );
 }
