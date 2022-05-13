@@ -1,3 +1,26 @@
 .wrapperTodo {
   margin-bottom: 28px;
 }
+
+.deleteAll {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  width: 124px;
+  height: 40px;
+  background: #eb5757;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+
+.deleteAll::before {
+  content: "🗑";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 10px;
+}

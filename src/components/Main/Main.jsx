@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import Tabs from "./Tabs/Tabs";
 import AddTodo from "./AddTodo/AddTodo";
 import Todos from "./Todos/Todos";
-import styles from './main.module.css'
+import styles from "./main.module.css";
+import { TABS } from "../../constants/constants";
 
 export default function Main() {
   const [todos, setTodos] = useState([]);
+  const [tabs, setTabs] = useState(TABS);
   return (
     <main className={styles.main}>
-      <Tabs />
+      <Tabs tabs={tabs} setTabs={setTabs} />
       <AddTodo setTodos={setTodos} todos={todos} />
-      <Todos todos={todos} setTodos={setTodos}/>
+      <Todos todos={todos} setTodos={setTodos} tabs={tabs} />
     </main>
   );
 }
