@@ -1,3 +1,7 @@
+:root {
+  --blue-color: #2f80ed;
+}
+
 .tabs {
   margin-bottom: 19px;
 }
@@ -24,7 +28,7 @@
 }
 
 .element:hover {
-  color: #2f80ed;
+  color: var(--blue-color);
 }
 
 .activeTab {
@@ -33,7 +37,7 @@
   top: 33px;
   width: 89px;
   height: 4px;
-  background: #2f80ed;
+  background: var(--blue-color);
   border-radius: 4px 4px 0px 0px;
   opacity: 0;
 }

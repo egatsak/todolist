@@ -4,9 +4,11 @@ import { v4 as uuidv4 } from "uuid";
 
 const AddTodo = ({ todos, setTodos, tabs }) => {
   const [todo, setTodo] = useState("");
+
   const inputHandler = (e) => {
     setTodo(e.target.value);
   };
+  
   const addTodo = (e) => {
     if (todo === "") {
       alert("enter task");
@@ -23,6 +25,7 @@ const AddTodo = ({ todos, setTodos, tabs }) => {
     }
     e.preventDefault();
   };
+
   return (
     !tabs[2].isActive && (
       <form className={styles.addTodo} onSubmit={addTodo}>

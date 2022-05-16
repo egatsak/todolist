@@ -6,7 +6,7 @@
 .wrapperTodo {
   width: 100%;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .wrapperTodo:hover {
@@ -14,6 +14,7 @@
 }
 
 .checkbox {
+  cursor: pointer;
   width: 24px;
   height: 24px;
   box-sizing: border-box;
@@ -44,9 +45,9 @@
   cursor: pointer;
 }
 
-/* .deleteButton:hover {
-  make button light-gray
-} */
+.deleteButton:hover {
+  transform: scale(1.1);
+}
 
 .deleteButton:active {
   transform: translate(1px, 1px);

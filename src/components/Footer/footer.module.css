@@ -1,3 +1,7 @@
+:root {
+  --main-text-color: #a9a9a9;
+}
+
 .footer {
   flex: 0 0 auto;
   margin-bottom: 24px;
@@ -6,7 +10,7 @@
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: #a9a9a9;
+  color: var(--main-text-color);
 }
 
 .text {
@@ -15,5 +19,5 @@
 
 .link {
   font-weight: 700;
-  color: #a9a9a9;
+  color: var(--main-text-color);
 }
