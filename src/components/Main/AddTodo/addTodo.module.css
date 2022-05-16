@@ -2,7 +2,7 @@
   display: flex;
   margin-top: 18px;
   height: 56px;
-  margin-bottom: 45px;
+  margin-bottom: 26px;
 }
 
 .inputAddTodo {
@@ -34,9 +34,13 @@
   color: #ffffff;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .buttonAddTodo:hover {
-  cursor: pointer;
   background: #679fe9;
+}
+
+.buttonAddTodo:active {
+  transform: translate(1px, 1px);
 }

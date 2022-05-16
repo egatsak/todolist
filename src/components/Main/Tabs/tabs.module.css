@@ -1,5 +1,11 @@
+.tabs {
+  margin-bottom: 19px;
+}
+
 .spisok {
   margin: 0px;
+  margin-bottom: 19px;
+  padding: 0;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -10,8 +16,26 @@
 }
 
 .element {
+  position: relative;
   flex-direction: row;
   width: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.element:hover {
+  color: #2f80ed;
+}
+
+.activeTab {
+  position: absolute;
+  left: -3px;
+  top: 33px;
+  width: 89px;
+  height: 4px;
+  background: #2f80ed;
+  border-radius: 4px 4px 0px 0px;
+  opacity: 0;
 }
 
 .border {
