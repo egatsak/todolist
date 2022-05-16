@@ -9,7 +9,7 @@ export default function Footer() {
         className={styles.link}
         href="https://devchallenges.io/portfolio/egatsak"
       >
-        username
+        egatsak
       </a>
       <span className={styles.text}> - devChallenges.io</span>
     </div>
