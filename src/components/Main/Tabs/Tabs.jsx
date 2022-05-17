@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./tabs.module.css";
 
 export default function Tabs({ tabs, setTabs }) {
+  
   const handleClick = (id) => {
     const newTabs = tabs.map((tab) => {
       if (tab.isActive) {
@@ -14,6 +15,7 @@ export default function Tabs({ tabs, setTabs }) {
     });
     setTabs(newTabs);
   };
+  
   return (
     <div className={styles.tabs}>
       <ul className={styles.spisok}>

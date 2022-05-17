@@ -3,10 +3,12 @@ import Todo from "./Todo/Todo";
 import styles from "./todos.module.css";
 
 export default function Todos({ todos, setTodos, tabs }) {
+  
   const deleteAllClickHandler = () => {
     const newArray = todos.filter((todo) => todo.completed === false);
     setTodos(newArray);
   };
+  
   return (
     <>
       {todos.map((todo) => {

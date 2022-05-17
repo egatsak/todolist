@@ -6,8 +6,10 @@ import styles from "./main.module.css";
 import { TABS } from "../../constants/constants.js";
 
 export default function Main() {
+  
   const [todos, setTodos] = useState([]);
   const [tabs, setTabs] = useState(TABS);
+  
   return (
     <main className={styles.main}>
       <Tabs tabs={tabs} setTabs={setTabs} />

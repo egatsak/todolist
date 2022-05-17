@@ -14,12 +14,12 @@
   line-height: 14.63px;
   width: 124px;
   height: 40px;
-  background: #eb5757;
+  background: var(--deleteAll-button-color);
   border-radius: 4px;
   border: none;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0px 2px 3px #eb5757;
+  box-shadow: 0px 2px 3px var(--deleteAll-button-color);
 }
 
 .deleteAll::before {

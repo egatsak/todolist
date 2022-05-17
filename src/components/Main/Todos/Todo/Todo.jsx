@@ -3,6 +3,7 @@ import styles from "./todo.module.css";
 import TrashBinSVG from "../../../../assets/deleteIcon.svg";
 
 export default function Todo({ todo, todos, setTodos, tabs }) {
+  
   const handleClick = (id) => {
     const newArray = todos.map((todo) => {
       if (todo.id === id) {
@@ -12,10 +13,12 @@ export default function Todo({ todo, todos, setTodos, tabs }) {
     });
     setTodos(newArray);
   };
+ 
   const handleDelete = (id) => {
     const newArray = todos.filter((todo) => todo.id !== id);
     setTodos(newArray);
   };
+  
   return (
     <div className={styles.wrapperTodoandDelete}>
       <div
@@ -46,7 +49,7 @@ export default function Todo({ todo, todos, setTodos, tabs }) {
           <img
             className={styles.deleteButton}
             src={TrashBinSVG}
-            alt="Bin"
+            alt="Del"
             onClick={() => handleDelete(todo.id)}
           />
         </span>
