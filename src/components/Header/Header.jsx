@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./header.module.css";
+import { useSelector } from "react-redux";
 
 export default function Header() {
-  return <div className={styles.header}>#todo</div>;
+  const count = useSelector((state) => state.counter.value);
+  return <div className={styles.header}>#todo {count}</div>;
 }
