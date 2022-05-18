@@ -1,0 +1,54 @@
+.wrapperTodoandDelete {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.wrapperTodo {
+  width: 100%;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.wrapperTodo:hover {
+  transform: scale(1.01);
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  background: #2f80ed;
+  border-radius: 4px;
+}
+
+.textTodo {
+  width: 100%;
+  margin-left: 7px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  vertical-align: super;
+}
+
+.stroke {
+  text-decoration: line-through;
+}
+
+.deleteButton {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  transform: scale(1.1);
+}
+
+.deleteButton:active {
+  transform: translate(1px, 1px);
+}

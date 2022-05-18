@@ -1,0 +1,38 @@
+.btnDeleteAllWrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deleteAll {
+  position: relative;
+  padding-left: 19px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.63px;
+  width: 124px;
+  height: 40px;
+  background: var(--deleteAll-button-color);
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px var(--deleteAll-button-color);
+}
+
+.deleteAll::before {
+  content: url(../../../assets/smallDeleteIcon.svg);
+  position: absolute;
+  top: 14px;
+  left: 26px;
+}
+
+.deleteAll:hover {
+  background: #e77b7b;
+}
+
+.deleteAll:active {
+  transform: translate(1px, 1px);
+}
