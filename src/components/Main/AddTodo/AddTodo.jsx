@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import styles from "./addTodo.module.css";
 import { v4 as uuidv4 } from "uuid";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { addTodo } from "../../../redux/slices/todos";
 
-const AddTodo = ({ tabs }) => {
+const AddTodo = () => {
   const dispatch = useDispatch();
   const [todo, setTodo] = useState("");
+  const tabs = useSelector((state) => state.tabs.tabs)
 
   const inputHandler = (e) => {
     setTodo(e.target.value);

@@ -1,20 +1,11 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styles from "./tabs.module.css";
+import { setIsActive } from "../../../redux/slices/tabs";
 
-export default function Tabs({ tabs, setTabs }) {
-  
-  const handleClick = (id) => {
-    const newTabs = tabs.map((tab) => {
-      if (tab.isActive) {
-        tab.isActive = false;
-      }
-      if (tab.id === id) {
-        tab.isActive = true;
-      }
-      return tab;
-    });
-    setTabs(newTabs);
-  };
+export default function Tabs() {
+const tabs = useSelector((state) => state.tabs.tabs)
+const dispatch = useDispatch()
   
   return (
     <div className={styles.tabs}>
@@ -25,7 +16,7 @@ export default function Tabs({ tabs, setTabs }) {
               <li
                 key={tab.id}
                 className={styles.element}
-                onClick={() => handleClick(tab.id)}
+                onClick={() => dispatch(setIsActive(tab.id))}
               >
                 {tab.name}
                 <div

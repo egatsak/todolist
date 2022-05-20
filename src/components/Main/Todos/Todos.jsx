@@ -5,9 +5,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { deleteAll } from "../../../redux/slices/todos";
 import AddTodo from "../AddTodo/AddTodo";
 
-export default function Todos({ tabs }) {
-  const { todos } = useSelector((state) => state.todos);
+export default function Todos() {
+  const { todos, tabs } = useSelector((state) => state);
+  const currentTabs=tabs.tabs;
   const dispatch = useDispatch();
+  
 
   const deleteAllClickHandler = () => {
     dispatch(deleteAll());
@@ -15,18 +17,18 @@ export default function Todos({ tabs }) {
 
   return (
     <>
-      {todos.map((todo) => {
-        if (tabs[0].isActive) {
-          return <Todo todo={todo} tabs={tabs} />;
-        } else if (tabs[1].isActive && !todo.completed) {
-          return <AddTodo todo={todo} tabs={tabs} />;
-        } else if (tabs[2].isActive) {
-          return todo.completed ? <Todo todo={todo} tabs={tabs} /> : null;
+      {todos.todos.map((todo) => {
+        if (currentTabs[0].isActive) {
+          return <Todo todo={todo} tabs={currentTabs} />;
+        } else if (currentTabs[1].isActive && !todo.completed) {
+          return <AddTodo todo={todo} />;
+        } else if (currentTabs[2].isActive) {
+          return todo.completed ? <Todo todo={todo} /> : null;
         }
         return null;
       })}
       <div className={styles.btnDeleteAllWrapper}>
-        {tabs[2].isActive && (
+        {currentTabs[2].isActive && (
           <button
             type="button"
             className={styles.deleteAll}
