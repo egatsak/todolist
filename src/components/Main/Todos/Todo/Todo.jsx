@@ -1,31 +1,19 @@
 import React from "react";
 import styles from "./todo.module.css";
 import TrashBinSVG from "../../../../assets/deleteIcon.svg";
+import { useDispatch } from "react-redux";
+import { deleteTodoById, setIsChecked } from "../../../../redux/slices/todos";
 
-export default function Todo({ todo, todos, setTodos, tabs }) {
-  
-  const handleClick = (id) => {
-    const newArray = todos.map((todo) => {
-      if (todo.id === id) {
-        todo.completed = !todo.completed;
-      }
-      return todo;
-    });
-    setTodos(newArray);
-  };
- 
-  const handleDelete = (id) => {
-    const newArray = todos.filter((todo) => todo.id !== id);
-    setTodos(newArray);
-  };
-  
+export default function Todo({ todo, tabs }) {
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.wrapperTodoandDelete}>
       <div
         key={todo.id}
         className={styles.wrapperTodo}
         onClick={() => {
-          handleClick(todo.id);
+          dispatch(setIsChecked(todo.id));
         }}
       >
         <input
@@ -50,7 +38,7 @@ export default function Todo({ todo, todos, setTodos, tabs }) {
             className={styles.deleteButton}
             src={TrashBinSVG}
             alt="Del"
-            onClick={() => handleDelete(todo.id)}
+            onClick={() => dispatch(deleteTodoById(todo.id))}
           />
         </span>
       )}
