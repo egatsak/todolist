@@ -7,7 +7,7 @@ import { addTodo } from "../../../redux/slices/todos";
 const AddTodo = () => {
   const dispatch = useDispatch();
   const [todo, setTodo] = useState("");
-  const tabs = useSelector((state) => state.tabs.tabs)
+  const tabs = useSelector((state) => state.tabs.tabs);
 
   const inputHandler = (e) => {
     setTodo(e.target.value);
@@ -21,7 +21,6 @@ const AddTodo = () => {
         id: uuidv4(),
         text: todo,
         completed: false,
-        date: new Date(),
       };
       dispatch(addTodo(newTodo));
       setTodo("");

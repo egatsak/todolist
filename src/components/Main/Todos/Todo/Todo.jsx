@@ -20,6 +20,7 @@ export default function Todo({ todo, tabs }) {
           type="checkbox"
           className={styles.checkbox}
           checked={todo.completed}
+          onChange={() => {}}
         />{" "}
         <span
           className={

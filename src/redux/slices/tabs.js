@@ -1,19 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { v4 as uuidv4 } from "uuid";
 
 export const tabsSlice = createSlice({
   name: "tabs",
   initialState: {
-    tabs:
-    [
-        { name: "All", id: 0, isActive: true },
-        { name: "Active", id: 1, isActive: false },
-        { name: "Completed", id: 2, isActive: false },
-    ]
+    tabs: [
+      { name: "All", id: uuidv4(), isActive: true },
+      { name: "Active", id: uuidv4(), isActive: false },
+      { name: "Completed", id: uuidv4(), isActive: false },
+    ],
   },
   reducers: {
     setIsActive: (state, action) => {
-      state.tabs = 
-      state.tabs.map((tab) => {
+      state.tabs = state.tabs.map((tab) => {
         if (tab.isActive) {
           tab.isActive = false;
         }

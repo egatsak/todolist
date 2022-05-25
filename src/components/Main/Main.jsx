@@ -5,8 +5,6 @@ import Todos from "./Todos/Todos";
 import styles from "./main.module.css";
 
 export default function Main() {
-
-
   return (
     <main className={styles.main}>
       <Tabs />
