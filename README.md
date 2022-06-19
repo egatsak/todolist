@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="http://starlit-griffin-fe6be6.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/egatsak/todolist">
+    <a href="https://devchallenges.io/solutions/gRo2UJfqyr76k167UgEi">
       Solution
     </a>
     <span> | </span>
@@ -58,7 +58,6 @@ All submitted todos are being saved in Localstorage and are accessible after pag
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5) was to build an application to complete the given user stories.
-To build this app I used 
 
 ## How To Use
 
@@ -86,10 +85,10 @@ $ npm start
 - [Marked - a markdown parser](https://github.com/chjj/marked)
 - [normalize.css](https://github.com/necolas/normalize.css)
 
-- [Vadim Lindo](https://github.com/Vadimchesh) - for guide and mentorship
+- [Vadim Lindo](https://github.com/Vadimchesh) - for guidance and mentorship
 
 ## Contact
 
 - GitHub [@egatsak](https://github.com/egatsak)
 - LinkedIn [LinkedIn](https://www.linkedin.com/in/yauheni-hatsak-39312023b/)
-- E-mail [yauhenhatsak@gmail.com](yauhenhatsak@gmail.com)
+- E-mail [greenglaz@gmail.com](mailto:yauhenhatsak@gmail.com)
