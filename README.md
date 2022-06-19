@@ -91,4 +91,4 @@ $ npm start
 
 - GitHub [@egatsak](https://github.com/egatsak)
 - LinkedIn [LinkedIn](https://www.linkedin.com/in/yauheni-hatsak-39312023b/)
-- E-mail [greenglaz@gmail.com](mailto:yauhenhatsak@gmail.com)
+- E-mail [greenglaz@gmail.com](mailto:greenglaz@gmail.com)
