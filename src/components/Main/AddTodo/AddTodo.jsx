@@ -15,7 +15,7 @@ const AddTodo = () => {
 
   const handleTodo = (e) => {
     if (todo === "") {
-      alert("enter task");
+      alert("Please enter todo!");
     } else {
       const newTodo = {
         id: uuidv4(),

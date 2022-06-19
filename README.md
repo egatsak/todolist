@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">#TODO App</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/egatsak/todolist">
       Solution
     </a>
     <span> | </span>
@@ -37,28 +37,28 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://user-images.githubusercontent.com/103357389/174471714-d7fc7c74-2c51-41f5-857c-b863598d8f97.JPG)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+#TODO app - a single-page application to manage todos.
+A user can enter & save todos via input form, mark them as completed and delete. 
+Three tabs show All, Active and Completed todos. The latter tab provides a 'delete all' button, which removes all todos.
+All submitted todos are being saved in Localstorage and are accessible after page reload or browser restart.
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
-
+- [Redux Toolkit](https://redux-toolkit.js.org)
+- [React-Redux](https://react-redux.js.org/)
+- [Redux Persist](https://www.npmjs.com/package/redux-persist)
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5) was to build an application to complete the given user stories.
+To build this app I used 
 
 ## How To Use
 
@@ -84,9 +84,12 @@ $ npm start
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
+- [normalize.css](https://github.com/necolas/normalize.css)
+
+- [Vadim Lindo](https://github.com/Vadimchesh) - for guide and mentorship
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@egatsak](https://github.com/egatsak)
+- LinkedIn [LinkedIn](https://www.linkedin.com/in/yauheni-hatsak-39312023b/)
+- E-mail [yauhenhatsak@gmail.com](yauhenhatsak@gmail.com)

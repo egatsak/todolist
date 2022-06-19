@@ -41,8 +41,6 @@ ul {
 }
 
 body {
-  /*   display: flex; /*added by Egatsak
-  flex-direction: column; /*added by Egatsak */
   height: 100%; /*added by Egatsak*/
   color: #333333;
   margin: 0;

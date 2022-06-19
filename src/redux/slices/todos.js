@@ -21,7 +21,7 @@ export const todosSlice = createSlice({
       state.todos = state.todos.filter((todo) => todo.id !== action.payload);
     },
     deleteAll: (state) => {
-      state.todos = state.todos.filter((todo) => todo.completed !== true);
+      state.todos = [];
     },
   },
 });
